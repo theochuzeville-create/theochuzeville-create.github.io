@@ -1,0 +1,134 @@
+/* Rempart de Miel : style du site. Aucune ressource externe. */
+:root {
+  --fond: #fff8e7;
+  --carte: #ffffff;
+  --texte: #3b2a14;
+  --discret: #6e5636;
+  --miel: #f2a900;
+  --miel-fonce: #a86a00;
+  --lien: #8a4f00;
+  --bord: #ecd9a8;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #1d1609;
+    --carte: #2a2010;
+    --texte: #f6ead2;
+    --discret: #cbb68f;
+    --miel: #f5b82e;
+    --miel-fonce: #f5b82e;
+    --lien: #ffcb5c;
+    --bord: #4a3a1c;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+main, header, footer {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding-top: 1.5rem;
+}
+
+header img {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  flex: none;
+}
+
+header .titre { font-size: 1.6rem; font-weight: 700; margin: 0; line-height: 1.2; }
+header .sous-titre { margin: 0.2rem 0 0; color: var(--discret); }
+
+nav.langues {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0.6rem 1rem 0;
+  text-align: right;
+  font-size: 0.95rem;
+}
+
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 1.5rem 0 0.5rem; }
+h2 {
+  font-size: 1.2rem;
+  margin: 2rem 0 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid var(--miel);
+}
+
+a { color: var(--lien); text-underline-offset: 2px; }
+a:focus-visible { outline: 3px solid var(--miel); outline-offset: 2px; }
+
+.bouton {
+  display: inline-block;
+  margin: 0.5rem 0;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  background: var(--miel);
+  color: #2b1d05;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bouton.inactif { opacity: 0.6; cursor: default; }
+
+.captures {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding: 0.5rem 0 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.captures img {
+  width: 42%;
+  max-width: 216px;
+  height: auto;
+  flex: none;
+  border-radius: 12px;
+  border: 2px solid var(--bord);
+  scroll-snap-align: start;
+}
+
+ul { padding-left: 1.3rem; }
+li { margin: 0.3rem 0; }
+
+.encadre {
+  background: var(--carte);
+  border: 1px solid var(--bord);
+  border-left: 5px solid var(--miel);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+}
+
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid var(--bord);
+  color: var(--discret);
+  font-size: 0.9rem;
+}
+
+footer a { color: var(--discret); }
