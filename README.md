@@ -44,3 +44,7 @@ Ensuite, dans GitHub, Settings > Pages : source « Deploy from a branch », bran
 - https://theochuzeville-create.github.io/app-ads.txt affiche la ligne AdMob, en texte brut.
 - https://theochuzeville-create.github.io/confidentialite.html et `/en/privacy.html` s'ouvrent sans connexion à un compte.
 - Dans la Play Console, le champ « Site Web » de la fiche doit être exactement `https://theochuzeville-create.github.io` : AdMob cherche `app-ads.txt` à la racine de ce domaine. La vérification dans AdMob peut prendre jusqu'à 24 heures après la publication du jeu.
+
+## Validation Google
+
+`googlea16c56da43bd8125.html` à la racine valide le site dans Google Search Console (nécessaire pour l'appli YouTube publiée). Ne jamais le retirer ni le modifier.
