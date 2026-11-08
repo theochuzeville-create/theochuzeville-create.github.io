@@ -6,6 +6,7 @@ Le petit site du jeu, prévu pour https://theochuzeville-create.github.io (dép�
 
 - `index.html` : présentation en français ; `en/index.html` : la même en anglais.
 - `confidentialite.html` et `en/privacy.html` : politique de confidentialité (adresse à donner à la Play Console).
+- `fact-vault/index.html` et `fact-vault/privacy.html` : accueil et politique de confidentialité de l'appli YouTube « Fact Vault uploader » (écran de consentement Google, projet shorts-auto-512313), en anglais avec une partie en français. À mettre à jour si l'appli demande d'autres droits Google.
 - `app-ads.txt` : la ligne AdMob, qui doit rester à la racine du site.
 - `.nojekyll` : GitHub Pages sert les fichiers tels quels.
 - `style.css` : clair et sombre selon le téléphone, aucune ressource externe.
